@@ -5,9 +5,7 @@ package com.sndevops.eng;
  *
  */
 public class App
-    // This is a test
-    // This is a second test
-    // This is a third test
+    
 {
     public static void main( String[] args )
         // test linejjj
