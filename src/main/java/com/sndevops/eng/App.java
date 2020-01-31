@@ -10,7 +10,9 @@ public class App
     public static void main( String[] args )
         // test linejjj
     {
-        System.out.println( "Hello test devops again" );
+        int i =0;
+        i++;
+        System.out.println( "Hello test devops again : " + i);
     }
     // Comment for testing
 }
