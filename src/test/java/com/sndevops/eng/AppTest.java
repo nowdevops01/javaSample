@@ -15,7 +15,7 @@ public class AppTest {
     
     @Test 
     public void testWidth() { 
-        Assert.assertEquals(INPUT,"13");  
+        Assert.assertEquals("13","13");  
     }
 }
  
