@@ -4,7 +4,7 @@ pipeline {
       maven 'Maven'
    }
    stages {
-       stage("build") {
+       stage("Build") {
                 steps {
                     snDevOpsStep ()
                     echo "Building" 
@@ -12,12 +12,12 @@ pipeline {
                     sleep 5
                 }
        }
-        stage("test") {
+        stage("Test") {
            steps {
                snDevOpsStep ()
                echo "Testing"
                sh 'mvn test'
-               sleep 3
+               sleep 15
            }
           post {
                 always {
@@ -26,11 +26,10 @@ pipeline {
           }
         }
   
-      stage("deploy") {
+      stage("Deploy") {
              steps{
                   snDevOpsStep ()
-                  echo "deploy in prod"
-                  echo "deploy in prod"
+                  echo ">> Deploy in prod"
                   snDevOpsChange()              
               }
       }      
