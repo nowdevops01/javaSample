@@ -17,6 +17,11 @@ public class AppTest {
     public void testWidth() { 
         Assert.assertEquals("13","13");  
     }
+    
+    @Test 
+    public void testVelocity() { 
+        Assert.assertEquals("vel","vel");  
+    }
 }
  
 
