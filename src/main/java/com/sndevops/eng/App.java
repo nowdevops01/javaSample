@@ -12,7 +12,6 @@ public class App
     {
         int i =0;
         i++;
-        j++
         System.out.println( "Hello test devops again : " + i);
     }
     // Comment for testing
