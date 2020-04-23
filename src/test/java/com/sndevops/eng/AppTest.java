@@ -22,6 +22,21 @@ public class AppTest {
     public void testVelocity() { 
         Assert.assertEquals("vel","vel");  
     }
+    
+    @Test 
+    public void testApple() { 
+        Assert.assertEquals("apple","apple");  
+    }
+    
+    @Test 
+    public void testBanana() { 
+        Assert.assertEquals("banana","banana");  
+    }
+    
+    @Test 
+    public void testCherry() { 
+        Assert.assertEquals("cherry","cherry");  
+    }    
 }
  
 
