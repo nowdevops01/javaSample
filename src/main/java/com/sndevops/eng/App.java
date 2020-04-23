@@ -17,7 +17,7 @@ public class App
         callModel("Slacker");
     }
     
-    public static callModel(String str) {
+    public callModel(String str) {
         System.out.println( "My Job : " + str);
     }
     // Comment for testing
