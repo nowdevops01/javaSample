@@ -64,7 +64,6 @@ pipeline {
                   snDevOpsStep ()
                   echo ">> Deploy in prod"
                   snDevOpsChange()
-                  exit 1
               }
       }      
       
