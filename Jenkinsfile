@@ -11,11 +11,6 @@ pipeline {
                     sh 'mvn -X clean install -DskipTests'
                     sleep 5
                 }
-               steps {
-                    snDevOpsStep ()
-                    echo "Done Building" 
-                    sleep 2
-                }
        }
         stage("Test") {
            steps {
