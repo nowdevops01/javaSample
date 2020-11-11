@@ -1,23 +1,19 @@
 pipeline {
    agent any
    tools {
-      maven 'Maven'
+      maven 'Jenkins Maven'
    }
    stages {
        stage("Build") {
                 steps {
-                    snDevOpsStep ()
                     echo "Building" 
                     sh 'mvn -X clean install -DskipTests'
-                    sleep 5
                 }
        }
         stage("Test") {
            steps {
-               snDevOpsStep ()
                echo "Testing"
                sh 'mvn test'
-               sleep 15
            }
           post {
                 always {
@@ -28,7 +24,6 @@ pipeline {
       
       stage("Create Artifact for prod") {
            steps {
-              snDevOpsStep ()
               echo "Creating artifact"
               sh 'mvn package'
               sleep 3
@@ -61,9 +56,8 @@ pipeline {
   
       stage("Deploy") {
              steps{
-                  snDevOpsStep ()
-                  echo ">> Deploy in prod"
                   snDevOpsChange()
+                  echo ">> Deploy in prod"
               }
       }      
       
