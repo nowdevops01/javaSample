@@ -23,7 +23,7 @@ public class AppTest {
     
     @Test 
     public void testApple() { 
-        Assert.assertEquals("apple","apple");  
+        Assert.assertEquals("apple","apple ");  
     }
     
     @Test 
